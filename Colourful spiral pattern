@@ -1,0 +1,16 @@
+# colourful spiral
+
+import turtle
+colors=['red','pink','blue','green','orange','yellow','white','purple']
+t=turtle.Turtle()
+turtle.bgcolor('black')
+for x in range(240):
+    t.pencolor(colors[x%8])
+    t.penup()
+    t.width(x/1000+1)
+    t.speed(30)
+    t.forward(x)
+    t.left(59)
+    t.pendown() 
+    t.dot()
+
