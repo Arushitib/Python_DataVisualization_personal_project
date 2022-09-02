@@ -1,0 +1,13 @@
+#hexagonal colortones
+
+import turtle
+colors=['red','blue','green','yellow','white','black','red','green','yellow']
+t=turtle.Turtle()
+turtle.bgcolor('black')
+for x in range(500):
+    t.pencolor(colors[x%9])
+    t.width(x/1000+1)
+    t.speed(20)
+    t.forward(x)
+    t.left(60)
+
