@@ -1,0 +1,18 @@
+#black and white optical illusion
+
+import turtle
+colors=['black','white','white','black']
+t=turtle.Turtle()
+turtle.bgcolor('black')
+for x in range(800):
+    t.pencolor(colors[x%4])
+    t.penup()
+    t.width(x/1.73)
+    t.speed(1500)
+    t.forward(x)
+    t.speed(1500)
+    t.left(59)
+    t.pendown() 
+    t.speed(1500)
+    t.dot()
+
