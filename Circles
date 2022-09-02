@@ -1,0 +1,18 @@
+#the circus of circles
+
+import turtle 
+turtle.width(2) 
+turtle.speed(10) 
+colors=['blue','red','green']
+for i in range(10): 
+    turtle.speed(50)
+    turtle.circle(80) 
+    turtle.circle(120)
+    for i in range(9,12): 
+        turtle.pencolor(colors[i%3])
+        turtle.circle(10*i)
+    turtle.pencolor('black')
+    turtle.circle(180)
+    turtle.fillcolor('yellow')
+    turtle.pencolor('black')
+    turtle.right(36) 
